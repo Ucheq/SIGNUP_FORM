@@ -100,13 +100,43 @@ form p span{
     font-weight: 700;
 }
 
-@media all and (max-width: 992px) {
+@media screen and (max-device-width: 375px) {
+    
     main{
-        padding: 20px 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: url("../Assets/bg-intro-mobile.png");
+        min-height: 100vh;
+        background: url("../Assets/bg-intro-mobile.png") no-repeat;
+        background-size: cover;
         background-color: hsl(0, 100%, 74%);
+        padding: 30px 35px 25px;
+    
     }
+    section{
+        max-width: 100%;
+        width:90%;
+    }
+        h1{
+            font-size: 35px;
+            line-height: 28px;
+            padding-bottom: 25px;
+            text-align: center;
+}
+    .head{
+    width: 90%;
+    background-color: hsl(248, 32%, 49%);
+    color: #efefef;
+    padding: 15px 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding-right: 30px;
+}
+
+.heading p{
+    line-height: 25px;
+    opacity: 0.9;
+    padding-bottom: 30px;
+}
 }
